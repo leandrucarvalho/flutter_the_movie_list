@@ -80,7 +80,7 @@ class DioServiceImp implements DioService {
 
 ## 💡 Credits
 
-- [Deivid Willyan | Flutter](https://www.youtube.com/watch?v=fcMlPEVSacs&list=PLRpTFz5_57cvo0CHf-AnojOvpznz8YO7S&ab_channel=DeividWillyan%7CFlutter): Diversos assuntos do mundo Flutter, Dart e Arquitetura, cursos introdutórios até avançados e de arquitetura, voltada para formar profissionais altamente competentes.
+- [Deivid Willyan | Flutter](https://www.youtube.com/watch?v=fcMlPEVSacs&list=PLRpTFz5_57cvo0CHf-AnojOvpznz8YO7S&ab_channel=DeividWillyan%7CFlutter): Several disciplines from the Flutter, Dart and Architecture world, introductory to advanced courses and architecture, aimed at training highly competent professionals.
 - [The Movie Database API](https://developers.themoviedb.org/4/getting-started): The API service is for those of you interested in using our movie, TV show or actor images and/or data in your application. Our API is a system we provide for you and your team to programmatically fetch and use our data and/or images.
 
 <hr>
