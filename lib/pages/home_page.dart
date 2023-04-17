@@ -43,16 +43,22 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Movies',
-                          style: Theme.of(context).textTheme.headlineMedium,
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 30,
+                          ),
                         ),
                         const SizedBox(
                           height: 20,
                         ),
                         TextField(
                           decoration: InputDecoration(
-                            prefixIcon: const Icon(Icons.search),
+                            prefixIcon: const Icon(
+                              Icons.search,
+                              color: Color(0xFFFFFFFF),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
