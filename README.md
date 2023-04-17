@@ -8,43 +8,6 @@
 </h1>
 
 <p align="center">
-<a href="https://github.com/leandrucarvalho/
-flutter_the_movie_list/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/leandrucarvalho/
-flutter_the_movie_list
-?style=flat-square" />
-</a>
-<a href="https://github.com/leandrucarvalho/
-flutter_the_movie_list
-/fork" target="blank">
-<img src="https://img.shields.io/github/forks/leandrucarvalho/
-flutter_the_movie_list
-?style=flat-square" />
-</a>
-<a href="https://github.com/leandrucarvalho/
-flutter_the_movie_list
-/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/leandrucarvalho/
-flutter_the_movie_list
-?style=flat-square" />
-</a>
-<a href="https://github.com/leandrucarvalho/
-flutter_the_movie_list
-/issues" target="blank">
-<img src="https://img.shields.io/github/issues/leandrucarvalho/
-flutter_the_movie_list
-?style=flat-square" />
-</a>
-<a href="https://github.com/leandrucarvalho/
-flutter_the_movie_list
-/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/leandrucarvalho/
-flutter_the_movie_list
-?style=flat-square" />
-</a>
-</p>
-
-<p align="center">
     <a href="" target="blank">View Demo</a>
     ·
     <a href="https://github.com/leandrucarvalho/flutter_the_movie_list/issues/new/choose">Report Bug</a>
