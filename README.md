@@ -8,8 +8,6 @@
 </h1>
 
 <p align="center">
-    <a href="" target="blank">View Demo</a>
-    ·
     <a href="https://github.com/leandrucarvalho/flutter_the_movie_list/issues/new/choose">Report Bug</a>
 </p>
 
