@@ -69,47 +69,6 @@ class Movies {
             ? Comments.fromJson(json['comments'])
             : null);
   }
-  Movies copWith({
-    final String? posterPath,
-    final int? id,
-    final String? backdropPath,
-    final int? totalResults,
-    final bool? public,
-    final int? revenue,
-    final int? page,
-    final List<Movie>? listmovies,
-    final ObjectIds? objectIds,
-    final String? iso6391,
-    final int? totalPages,
-    final String? description,
-    final CreatedBy? createdBy,
-    final String? iso31661,
-    final double? averageRating,
-    final int? runtime,
-    final String? name,
-    final Comments? comments,
-  }) {
-    return Movies(
-      posterPath: posterPath ?? this.posterPath,
-      id: id ?? this.id,
-      backdropPath: backdropPath ?? this.backdropPath,
-      totalResults: totalResults ?? this.totalResults,
-      public: public ?? this.public,
-      revenue: revenue ?? this.revenue,
-      page: page ?? this.page,
-      listmovies: listmovies ?? this.listmovies,
-      objectIds: objectIds ?? this.objectIds,
-      iso6391: iso6391 ?? this.iso6391,
-      totalPages: totalPages ?? this.totalPages,
-      description: description ?? this.description,
-      createdBy: createdBy ?? this.createdBy,
-      iso31661: iso31661 ?? this.iso31661,
-      averageRating: averageRating ?? this.averageRating,
-      runtime: runtime ?? this.runtime,
-      name: name ?? this.name,
-      comments: comments ?? this.comments,
-    );
-  }
 }
 
 class ObjectIds {

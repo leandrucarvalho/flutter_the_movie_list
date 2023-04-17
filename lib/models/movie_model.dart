@@ -52,39 +52,5 @@ class Movie {
     );
   }
 
-  Movie copWith({
-    final String? posterPath,
-    final bool? adult,
-    final String? overview,
-    final String? releaseDate,
-    final String? originalTitle,
-    final List<int>? genreIds,
-    final int? id,
-    final String? mediaType,
-    final String? originalLanguage,
-    final String? title,
-    final String? backdropPath,
-    final double? popularity,
-    final int? voteCount,
-    final bool? video,
-    final num? voteAverage,
-  }) {
-    return Movie(
-      posterPath: posterPath ?? this.posterPath,
-      adult: adult ?? this.adult,
-      overview: overview ?? this.overview,
-      releaseDate: releaseDate ?? this.releaseDate,
-      originalTitle: originalTitle ?? this.originalTitle,
-      genreIds: genreIds ?? this.genreIds,
-      id: id ?? this.id,
-      mediaType: mediaType ?? this.mediaType,
-      originalLanguage: originalLanguage ?? this.originalLanguage,
-      title: title ?? this.title,
-      backdropPath: backdropPath ?? this.backdropPath,
-      popularity: popularity ?? this.popularity,
-      voteCount: voteCount ?? this.voteCount,
-      video: video ?? this.video,
-      voteAverage: voteAverage ?? this.voteAverage,
-    );
-  }
+  toJson() {}
 }

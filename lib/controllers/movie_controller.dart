@@ -13,8 +13,6 @@ class MovieController {
 
   final searchMovies = ValueNotifier<List<Movie>>([]);
 
-  // Movies? _cachedMovies;
-
   onChanged(String value) {
     List<Movie> data = [];
     for (var element in movies.value!.listmovies!) {
@@ -29,6 +27,5 @@ class MovieController {
 
   fethc() async {
     movies.value = await _moviesRepository.getMovies();
-    //_cachedMovies = movies.value;
   }
 }

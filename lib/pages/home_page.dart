@@ -75,35 +75,35 @@ class _HomePageState extends State<HomePage> {
               ),
               Expanded(
                 child: ValueListenableBuilder<List<Movie>>(
-                    valueListenable: _controller.searchMovies,
-                    builder: (context, listMovies, _) {
-                      if (listMovies.isNotEmpty) {
-                        return ListView.separated(
-                          itemCount: listMovies.length,
-                          itemBuilder: (_, index) => CustomListCardWidget(
-                            movie: listMovies[index],
-                          ),
-                          separatorBuilder: (_, __) => const Divider(),
-                        );
-                      }
-                      return ValueListenableBuilder<Movies?>(
-                        valueListenable: _controller.movies,
-                        builder: (_, movies, __) {
-                          return movies != null
-                              ? ListView.separated(
-                                  itemCount: _controller
-                                          .movies.value?.listmovies?.length ??
-                                      0,
-                                  itemBuilder: (_, index) =>
-                                      CustomListCardWidget(
-                                    movie: movies.listmovies![index],
-                                  ),
-                                  separatorBuilder: (_, __) => const Divider(),
-                                )
-                              : Lottie.asset('assets/lottie.json');
-                        },
+                  valueListenable: _controller.searchMovies,
+                  builder: (context, listMovies, _) {
+                    if (listMovies.isNotEmpty) {
+                      return ListView.separated(
+                        itemCount: listMovies.length,
+                        itemBuilder: (_, index) => CustomListCardWidget(
+                          movie: listMovies[index],
+                        ),
+                        separatorBuilder: (_, __) => const Divider(),
                       );
-                    }),
+                    }
+                    return ValueListenableBuilder<Movies?>(
+                      valueListenable: _controller.movies,
+                      builder: (_, movies, __) {
+                        return movies != null
+                            ? ListView.separated(
+                                itemCount: _controller
+                                        .movies.value?.listmovies?.length ??
+                                    0,
+                                itemBuilder: (_, index) => CustomListCardWidget(
+                                  movie: movies.listmovies![index],
+                                ),
+                                separatorBuilder: (_, __) => const Divider(),
+                              )
+                            : Lottie.asset('assets/lottie.json');
+                      },
+                    );
+                  },
+                ),
               ),
             ],
           ),
