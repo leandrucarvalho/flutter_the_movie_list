@@ -58,6 +58,28 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 
 - [Flutter](https://flutter.dev/): for building the app
 
+## 📘 Comments
+
+- create dio_service_imp.dart file inside the service folder, i have hidden this file because of the api token:
+
+```
+class DioServiceImp implements DioService {
+  @override
+  Dio getDio() {
+    return Dio(
+      BaseOptions(
+        baseUrl: 'https://api.themoviedb.org/4/list/1?language=pt-BR',
+        headers: {
+          'contet-type': 'application/json;charset=utf-8',
+          'authorization':
+              'Bearer api token'
+        },
+      ),
+    );
+  }
+}
+```
+
 ## 💡 Credits
 
 - [Deivid Willyan | Flutter](https://www.youtube.com/watch?v=fcMlPEVSacs&list=PLRpTFz5_57cvo0CHf-AnojOvpznz8YO7S&ab_channel=DeividWillyan%7CFlutter): Diversos assuntos do mundo Flutter, Dart e Arquitetura, cursos introdutórios até avançados e de arquitetura, voltada para formar profissionais altamente competentes.
