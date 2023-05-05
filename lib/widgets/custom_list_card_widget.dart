@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:the_movie_list/models/movie_model.dart';
 import 'package:the_movie_list/pages/details_page.dart';
+import 'package:the_movie_list/thema/thema_colors.dart';
 import 'package:the_movie_list/utils/apis.utils.dart';
 
 class CustomListCardWidget extends StatelessWidget {
@@ -23,7 +25,7 @@ class CustomListCardWidget extends StatelessWidget {
       child: Container(
         height: 200,
         decoration: BoxDecoration(
-            color: const Color(0xFF404040),
+            color: ThemaColors.cardColor,
             borderRadius: BorderRadius.circular(20)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -55,13 +57,55 @@ class CustomListCardWidget extends StatelessWidget {
                   children: [
                     Text(
                       movie.title!,
-                      style: Theme.of(context).textTheme.titleMedium,
+                      style: const TextStyle(
+                        color: ThemaColors.primaryColor,
+                        fontFamily: 'Roboto',
+                        fontSize: 16,
+                      ),
                       softWrap: true,
                     ),
                     const Spacer(),
-                    Text('Popularidade: ${movie.popularity}'),
+                    Row(
+                      children: [
+                        const FaIcon(
+                          FontAwesomeIcons.fireFlameCurved,
+                          color: Color(0xFFE25822),
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'Popularidade: ${movie.popularity}',
+                          style: const TextStyle(
+                            color: ThemaColors.primaryColor,
+                            fontFamily: 'Roboto',
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
+                    ),
                     const Spacer(),
-                    Text('Votos: ${movie.voteAverage}'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const FaIcon(
+                          FontAwesomeIcons.star,
+                          color: Colors.yellow,
+                        ),
+                        const SizedBox(
+                          width: 2,
+                        ),
+                        Text(
+                          'Votos: ${movie.voteAverage}',
+                          style: const TextStyle(
+                            color: ThemaColors.primaryColor,
+                            fontFamily: 'Roboto',
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),

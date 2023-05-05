@@ -5,6 +5,7 @@ import 'package:the_movie_list/models/movie_model.dart';
 import 'package:the_movie_list/models/movies_model.dart';
 import 'package:the_movie_list/repositories/movies_repository_imp.dart';
 import 'package:the_movie_list/services/dio_service_imp.dart';
+import 'package:the_movie_list/thema/thema_colors.dart';
 import 'package:the_movie_list/widgets/custom_list_card_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF606060),
+      backgroundColor: ThemaColors.secondaryColor,
       body: Padding(
         padding: const EdgeInsets.all(28.0),
         child: SizedBox(
@@ -46,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                         const Text(
                           'Movies',
                           style: TextStyle(
-                            color: Color(0xFFFFFFFF),
+                            color: ThemaColors.primaryColor,
                             fontSize: 30,
                           ),
                         ),
@@ -57,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                           decoration: InputDecoration(
                             prefixIcon: const Icon(
                               Icons.search,
-                              color: Color(0xFFFFFFFF),
+                              color: ThemaColors.primaryColor,
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
@@ -99,7 +100,13 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 separatorBuilder: (_, __) => const Divider(),
                               )
-                            : Lottie.asset('assets/lottie.json');
+                            : Padding(
+                                padding: const EdgeInsets.only(left: 20),
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  child: Lottie.asset('assets/lottie.json'),
+                                ),
+                              );
                       },
                     );
                   },

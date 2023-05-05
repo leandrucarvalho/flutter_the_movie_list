@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_movie_list/models/movie_model.dart';
+import 'package:the_movie_list/thema/thema_colors.dart';
 import 'package:the_movie_list/utils/apis.utils.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -9,9 +10,9 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF606060),
+      backgroundColor: ThemaColors.secondaryColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF404040),
+        backgroundColor: ThemaColors.cardColor,
         title: Text(movie.title!),
       ),
       body: SingleChildScrollView(
@@ -40,7 +41,11 @@ class DetailsPage extends StatelessWidget {
               Text(
                 movie.overview!,
                 textAlign: TextAlign.justify,
-                style: Theme.of(context).textTheme.titleMedium,
+                style: const TextStyle(
+                  color: ThemaColors.primaryColor,
+                  fontFamily: 'Roboto',
+                  fontSize: 15,
+                ),
               ),
               const SizedBox(
                 height: 50,
@@ -48,21 +53,33 @@ class DetailsPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Icon(Icons.title),
-                  Text(movie.originalTitle!,
-                      style: const TextStyle(fontWeight: FontWeight.bold)),
+                  const Icon(
+                    Icons.title,
+                    color: ThemaColors.primaryColor,
+                  ),
+                  Text(
+                    movie.originalTitle!,
+                    style: const TextStyle(
+                        color: ThemaColors.primaryColor,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Icon(Icons.date_range_outlined),
+                  const Icon(
+                    Icons.date_range_outlined,
+                    color: ThemaColors.primaryColor,
+                  ),
                   Text(
                     movie.releaseDate!,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        color: ThemaColors.primaryColor,
+                        fontWeight: FontWeight.bold),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),

@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   dio: ^5.1.1
   lottie: ^2.3.2
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
