@@ -1,8 +1,3 @@
-<!-- <p align="center">
-  <a href="https://develogo.com">
-    <img alt="Portfolio" src="./src/images/mdg.png" width="60" />
-  </a>
-</p> -->
 <h1 align="center">
   the_movie_list
 </h1>
